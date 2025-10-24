@@ -23,4 +23,4 @@ export const store = configureStore({
       leadsApi.middleware
     ),
 })
-setupListeners(store.dispatch)
+setupListeners(store.dispatch);
