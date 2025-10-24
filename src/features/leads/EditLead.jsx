@@ -1,5 +1,5 @@
-import React, { useEffect } from "react"
-import { useParams } from "react-router-dom"
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { useGetLeadDetailsByIdQuery, useLazyGetAllLeadsQuery, useLazyGetLeadDetailsByIdQuery, useUpdateLeadMutation } from "../../services/leadsApi";
 import { useFormik } from "formik";
 

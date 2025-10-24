@@ -1,5 +1,5 @@
-import React from "react"
-import { useGetAllRecipesQuery } from "../../services/recipesApi"
+import React from "react";
+import { useGetAllRecipesQuery } from "../../services/recipesApi";
 
 
 function Recipes(){

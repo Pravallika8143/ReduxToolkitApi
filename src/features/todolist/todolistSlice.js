@@ -10,7 +10,7 @@ export const todolistSlice= createSlice({
     initialState,
     reducers:{
         addTodo:(state,action)=>{
-            state.todos.push(action.payload)
+            state.todos.push(action.payload);
         },
         deleteTodo:(state,action)=>{
             state.todos.splice(action.payload,1);

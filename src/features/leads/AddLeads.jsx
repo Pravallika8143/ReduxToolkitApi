@@ -1,6 +1,6 @@
 import { useFormik } from "formik"
 import React from "react"
-import { useAddNewLeadMutation } from "../../services/leadsApi"
+import { useAddNewLeadMutation } from "../../services/leadsApi";
 
 
 function AddLeads(){

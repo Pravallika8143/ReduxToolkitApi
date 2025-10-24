@@ -1,10 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from '../features/counter/counterSlice'
-import todolistReducer from '../features/todolist/todolistSlice'
-import { productsApi } from '../services/productsApi'
-import { setupListeners } from '@reduxjs/toolkit/query'
-import { recipesApi } from '../services/recipesApi'
-import { leadsApi } from '../services/leadsApi'
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from '../features/counter/counterSlice';
+import todolistReducer from '../features/todolist/todolistSlice';
+import { productsApi } from '../services/productsApi';
+import { setupListeners } from '@reduxjs/toolkit/query';
+import { recipesApi } from '../services/recipesApi';
+import { leadsApi } from '../services/leadsApi';
 
 
 

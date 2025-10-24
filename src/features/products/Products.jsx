@@ -15,7 +15,7 @@ function Products(){
                         return (
                             <li className="p-3">
                                 <h4>{prod.title.slice(0,20)}</h4>
-                                <img src={prod.thumbnail} width="200px"  alt=""/>
+                                <img src={prod.thumbnail} width="200px" alt=""/>
                             </li>
                         )
                        }) 
