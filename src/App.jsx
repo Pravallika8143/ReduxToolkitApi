@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Counter from "./features/counter/Counter";
 import Products from "./features/products/Products.jsx";
