@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="border border-3 m-3 p-1 border-dark">
       <h1>Redux ToolKit</h1>
-      <ul className="list-unstyled ms-4">
+      {/* <ul className="list-unstyled ms-4">
       <li>
         <Link to="/counter" style={{textDecoration:"none"}}>Counter</Link>
       </li>
@@ -26,7 +26,7 @@ function App() {
       <li>
         <Link to="/products" style={{textDecoration:"none"}}>Products</Link>
       </li>
-    </ul> 
+    </ul>  */}
     <div>
       <Navbar></Navbar>
       <Outlet></Outlet>
