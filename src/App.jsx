@@ -13,18 +13,18 @@ function App() {
   return (
     <div className="border border-3 m-3 p-1 border-dark">
       <h1>Redux ToolKit</h1>
-      <ul>
+      <ul className="list-unstyled ms-4">
       <li>
-        <Link to="/counter">Counter</Link>
+        <Link to="/counter" style={{textDecoration:"none"}}>Counter</Link>
       </li>
       <li>
-        <Link to="/todolist">Todolist</Link>
+        <Link to="/todolist" style={{textDecoration:"none"}}>Todolist</Link>
       </li>
       <li>
-        <Link to="/recipes">Recipes</Link>
+        <Link to="/recipes" style={{textDecoration:"none"}}>Recipes</Link>
       </li>
       <li>
-        <Link to="/products">Products</Link>
+        <Link to="/products" style={{textDecoration:"none"}}>Products</Link>
       </li>
     </ul> 
     <div>
