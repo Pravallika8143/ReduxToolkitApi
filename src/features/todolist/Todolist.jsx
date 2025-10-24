@@ -22,4 +22,4 @@ function TodoList(){
     </div>
   )
 }
-export default TodoList;
+export default TodoList
