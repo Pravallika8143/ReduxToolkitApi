@@ -31,7 +31,7 @@ function EditLead(){
             getLeadDetailsFn(id).then(()=>{
                 leadForm.setValues({...data})
             })
-        },[data])
+        },[data]);
       return (
         <div className="border border-3 p-3 m-3 border-dark">
             <h1>EditLead</h1>
