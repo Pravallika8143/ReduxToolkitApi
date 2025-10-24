@@ -1,5 +1,5 @@
 import React from "react";
-import { useDeleteLeadMutation, useGetAllLeadsQuery, useLazyGetAllLeadsQuery } from "../../services/leadsApi";
+import { useDeleteLeadMutation, useGetAllLeadsQuery, useLazyGetAllLeadsQuery } from "../../services/leadsApi"
 import { Link } from "react-router-dom";
 
 function Leads(){
