@@ -7,6 +7,7 @@ function Leads(){
     var [deleteLeadFn] =useDeleteLeadMutation();
     var [getAllLeadsFn]=useLazyGetAllLeadsQuery();
     console.log(data);
+    
     function deleteLead(id){
         deleteLeadFn(id).then((res)=>{
             console.log(res);
