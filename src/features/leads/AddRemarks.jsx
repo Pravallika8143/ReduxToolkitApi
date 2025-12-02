@@ -41,7 +41,7 @@ function AddRemarks(){
             <div className="border border-3 p-3 m-3 border-dark">
                 <h1>Add Remarks</h1>
                 {isLoading && <b>Loading....</b>}
-                {!isLoading && JSON.stringify(data)}
+                {!isLoading}
                 <form onSubmit={leadForm.handleSubmit}>
                 <select {...leadForm.getFieldProps("status")}>
                     <option value="New">New</option>

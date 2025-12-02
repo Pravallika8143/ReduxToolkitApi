@@ -17,6 +17,7 @@ function AddLeads(){
             addLeadFn(values)
             .then((res)=>{
               console.log(res)
+              // console.log(values)
             })
             .catch(err=>console.log(err))
         },
