@@ -45,8 +45,6 @@ function Recipes() {
                                                 : recipe.description
                                             : "Delicious recipe."}
                                     </p>
-
-                                    <button className="btn btn-primary mt-auto">View Recipe</button>
                                 </div>
                             </div>
                         </div>
