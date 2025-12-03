@@ -1,38 +1,83 @@
-import { useFormik } from "formik"
-import React from "react"
+import { useFormik } from "formik";
+import React from "react";
 import { useAddNewLeadMutation } from "../../services/leadsApi";
 
+function AddLeads() {
+    const [addLeadFn] = useAddNewLeadMutation();
 
-function AddLeads(){
-    var [addLeadFn] =useAddNewLeadMutation();
-    var leadForm=useFormik({
-        initialValues:{
-          "name":"",
-          "email":"",
-          "phone":"",
-          "courseInterested":"",
-          "status":"New"
+    const leadForm = useFormik({
+        initialValues: {
+            name: "",
+            email: "",
+            phone: "",
+            courseInterested: "",
+            status: "New"
         },
-        onSubmit:(values)=>{
+        onSubmit: (values) => {
             addLeadFn(values)
-            .then((res)=>{
-              console.log(res)
-              // console.log(values)
-            })
-            .catch(err=>console.log(err))
-        },
-    })
+                .then((res) => console.log(res))
+                .catch(err => console.log(err));
+        }
+    });
+
     return (
-        <div className="border border-3 p-3 m-3 border-dark">
-          <h1>AddLeads</h1>
-          <form onSubmit={leadForm.handleSubmit}>
-            <input type="text" {...leadForm.getFieldProps("name")} placeholder="Name"/><br/><br/>
-            <input type="text" {...leadForm.getFieldProps("email")} placeholder="Email"/><br/><br/>
-            <input type="text" {...leadForm.getFieldProps("phone")} placeholder="Mobile Number"/><br/><br/>
-            <input type="text" {...leadForm.getFieldProps("courseInterested")} placeholder="Course Interested"/><br/><br/>
-            <button className="btn btn-success">AddLead</button>
-          </form>
+        <div className="container mt-4 d-flex justify-content-center">
+            <div className="card shadow-lg p-4" style={{ width: "32rem" }}>
+                
+                <h3 className="text-center fw-bold mb-3">
+                    Add New Lead
+                </h3>
+
+                <form onSubmit={leadForm.handleSubmit} className="mt-3">
+
+                    <div className="mb-3">
+                        <label className="form-label fw-semibold">Name</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            placeholder="Enter name"
+                            {...leadForm.getFieldProps("name")}
+                        />
+                    </div>
+
+                    <div className="mb-3">
+                        <label className="form-label fw-semibold">Email</label>
+                        <input
+                            type="email"
+                            className="form-control"
+                            placeholder="Enter email"
+                            {...leadForm.getFieldProps("email")}
+                        />
+                    </div>
+
+                    <div className="mb-3">
+                        <label className="form-label fw-semibold">Mobile Number</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            placeholder="Enter phone number"
+                            {...leadForm.getFieldProps("phone")}
+                        />
+                    </div>
+
+                    <div className="mb-3">
+                        <label className="form-label fw-semibold">Course Interested</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            placeholder="Enter course"
+                            {...leadForm.getFieldProps("courseInterested")}
+                        />
+                    </div>
+
+                    <button type="submit" className="btn btn-success w-100 mt-2">
+                        Add Lead
+                    </button>
+                </form>
+
+            </div>
         </div>
-    )
+    );
 }
+
 export default AddLeads;

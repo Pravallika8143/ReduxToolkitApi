@@ -1,43 +1,3 @@
-// import { Link, Outlet } from "react-router-dom";
-// import Navbar from "./components/Navbar.jsx";
-// import Counter from "./features/counter/Counter";
-// import Products from "./features/products/Products.jsx";
-// import Recipes from "./features/recipes/Recipes.jsx";
-// import TodoList from "./features/todolist/Todolist";
-// import Leads from "./features/leads/Leads.jsx";
-// import AddLeads from "./features/leads/AddLeads.jsx";
-
-
-// function App() {
-
-//   return (
-//     <div className="border border-3 m-3 p-1 border-dark">
-//       <h1>Redux ToolKit</h1>
-//       {/* <ul className="list-unstyled ms-4">
-//       <li>
-//         <Link to="/counter" style={{textDecoration:"none"}}>Counter</Link>
-//       </li>
-//       <li>
-//         <Link to="/todolist" style={{textDecoration:"none"}}>Todolist</Link>
-//       </li>
-//       <li>
-//         <Link to="/recipes" style={{textDecoration:"none"}}>Recipes</Link>
-//       </li>
-//       <li>
-//         <Link to="/products" style={{textDecoration:"none"}}>Products</Link>
-//       </li>
-//     </ul>  */}
-//     <div>
-//       <Navbar></Navbar>
-//       <Outlet></Outlet>
-//     </div>
-//     </div>
-//   )
-// }
-
-// export default App;
-
-
 import { Link, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 
@@ -45,18 +5,14 @@ function App() {
   return (
     <div className="container mt-4">
 
-      {/* Outer Box - Same as your border box */}
       <div className="border border-3 border-dark p-3 rounded">
 
-        {/* Title Same as Before */}
-        <h1 className="mb-3">Redux Toolkit</h1>
+        <h1 className="mb-3 text-center">Redux Toolkit</h1>
 
-        {/* Navigation */}
         <div className="mb-3">
           <Navbar />
         </div>
 
-        {/* Page Content */}
         <div>
           <Outlet />
         </div>
