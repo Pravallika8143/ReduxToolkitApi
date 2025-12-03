@@ -50,7 +50,7 @@ function Leads(){
                             <td>{lead.courseInterested}</td>
                             <td>
                                 {lead.status}
-                                <Link className="btn btn-warning ms-2" 
+                                <Link className="btn btn-warning ms-2 mt-2" 
                                 to={`/addRemarks/${lead['_id']}`}
                                 >AddRemarks</Link>
                             </td>
