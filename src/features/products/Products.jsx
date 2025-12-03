@@ -45,15 +45,6 @@ function Products() {
                                     </p>
 
                                     <p className="fw-bold mb-3">${prod.price.toFixed(2)}</p>
-
-                                    <div className="mt-auto d-flex justify-content-between">
-                                        <button className="btn btn-primary btn-sm">
-                                            Add to Cart
-                                        </button>
-                                        <button className="btn btn-outline-secondary btn-sm">
-                                            View Details
-                                        </button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
