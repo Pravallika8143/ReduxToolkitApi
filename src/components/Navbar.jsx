@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-grey shadow-sm border rounded px-3 py-2">
+    <nav className="navbar navbar-expand-lg bg-white shadow-sm border rounded px-3 py-2">
       <div className="container-fluid">
 
         <button
@@ -26,7 +26,7 @@ function Navbar() {
                 to="/counter"
                 className={({ isActive }) =>
                   "nav-link px-3 py-2 rounded " +
-                  (isActive ? "bg-primary text-white fw-semibold" : "text-dark")
+                  (isActive ? "bg-secondary text-white fw-semibold" : "text-dark")
                 }
               >
                 <b>Counter</b>
@@ -38,7 +38,7 @@ function Navbar() {
                 to="/todolist"
                 className={({ isActive }) =>
                   "nav-link px-3 py-2 rounded " +
-                  (isActive ? "bg-primary text-white fw-semibold" : "text-dark")
+                  (isActive ? "bg-secondary text-white fw-semibold" : "text-dark")
                 }
               >
                 <b>TodoList</b>
@@ -50,7 +50,7 @@ function Navbar() {
                 to="/products"
                 className={({ isActive }) =>
                   "nav-link px-3 py-2 rounded " +
-                  (isActive ? "bg-primary text-white fw-semibold" : "text-dark")
+                  (isActive ? "bg-secondary text-white fw-semibold" : "text-dark")
                 }
               >
                 <b>Products</b>
@@ -62,7 +62,7 @@ function Navbar() {
                 to="/recipes"
                 className={({ isActive }) =>
                   "nav-link px-3 py-2 rounded " +
-                  (isActive ? "bg-primary text-white fw-semibold" : "text-dark")
+                  (isActive ? "bg-secondary text-white fw-semibold" : "text-dark")
                 }
               >
                 <b>Recipes</b>
@@ -74,7 +74,7 @@ function Navbar() {
                 to="/leads"
                 className={({ isActive }) =>
                   "nav-link px-3 py-2 rounded " +
-                  (isActive ? "bg-primary text-white fw-semibold" : "text-dark")
+                  (isActive ? "bg-secondary text-white fw-semibold" : "text-dark")
                 }
               >
                 <b>Leads</b>
